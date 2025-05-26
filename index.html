@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Telegram: Join Group</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
       background-color: #000;
-      color: white;
+      color: #fff;
     }
 
     .header {
-      background-color: #1e1e1e;
-      padding: 10px;
+      background-color: #222;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px;
+    }
+
+    .header-left {
       display: flex;
       align-items: center;
     }
 
-    .header img {
-      height: 25px;
+    .header-left img {
+      width: 30px;
       margin-right: 10px;
     }
 
-    .header .title {
-      font-size: 16px;
+    .header-left span {
+      font-size: 18px;
       font-weight: bold;
     }
 
     .download-btn {
-      margin-left: auto;
       background-color: #0088cc;
-      color: white;
-      padding: 6px 12px;
-      border-radius: 5px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      color: #fff;
       font-weight: bold;
+      font-size: 14px;
     }
 
     .card {
+      background-color: #111;
       margin: 20px;
-      background-color: #1e1e1e;
-      border-radius: 15px;
       padding: 20px;
+      border-radius: 16px;
       text-align: center;
     }
 
@@ -50,23 +56,25 @@
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      margin-bottom: 15px;
+      object-fit: cover;
     }
 
     .name {
-      font-size: 22px;
+      font-size: 24px;
       font-weight: bold;
+      margin-top: 10px;
     }
 
     .subs {
       font-size: 14px;
       color: #aaa;
-      margin-bottom: 10px;
+      margin: 5px 0 15px;
     }
 
     .disclaimer {
       font-size: 14px;
       color: #ccc;
+      line-height: 1.5;
       margin-bottom: 20px;
     }
 
@@ -74,38 +82,40 @@
       background-color: #0088cc;
       color: white;
       font-weight: bold;
-      padding: 15px;
+      padding: 14px 32px;
       border-radius: 999px;
       text-decoration: none;
       display: inline-block;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
-    .invited-text {
+    .invite-msg {
       font-size: 14px;
       color: #999;
     }
   </style>
 </head>
 <body>
-
   <div class="header">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
-    <div class="title">Telegram</div>
+    <div class="header-left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Logo">
+      <span>Telegram</span>
+    </div>
     <div class="download-btn">DOWNLOAD</div>
   </div>
 
   <div class="card">
-    <img class="avatar" src="https://i.imgur.com/zQZ8HkR.png" alt="Profile Photo">
+    <img class="avatar" src="https://i.imgur.com/bvF0nhK.png" alt="Profile">
     <div class="name">Asomw Link's</div>
     <div class="subs">733 subscribers</div>
     <div class="disclaimer">
-      Channel Disclaimer: All The Content in this Channel is Either forwarded from other Channels or Taken from the Internet, We Don’t Own Any Content.<br>
-      ❌ No Copyright Infringement Intended.
+      Channel Disclaimer : All The Content in this Channel is Either forwarded from other Channels or Taken from the Internet, We Don’t Own Any Content.<br>
+      <span style="font-size: 20px;">❌</span>No Copyright Infringement Intended.
     </div>
     <a class="join-btn" href="https://t.me/yourchannel" target="_blank">JOIN CHANNEL</a>
-    <div class="invited-text">You are invited to the channel <b>Asomw Link's</b>. Click above to join.</div>
+    <div class="invite-msg">
+      You are invited to the channel <b>Asomw Link's</b>.<br>Click above to join.
+    </div>
   </div>
-
 </body>
 </html>
