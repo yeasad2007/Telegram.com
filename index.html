@@ -1,28 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <title>Loading...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>সেলিব্রিটিদের ভাইরাল ভিডিও </title>
 
-  <!-- Instant Redirect -->
-  <script>
-    window.location.replace("https://www.profitableratecpm.com/k0te67db?key=f184cf75e8d4eb1c3bf659dacca02c6f");
-  </script>
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Join Group Chat On Telegram" />
+  <meta property="og:description" content="Click here to join our Telegram group and stay updated!" />
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" />
+  <meta property="og:url" content="https://join-group-chat-on-telegram.vercel.app" />
+  <meta property="og:type" content="website" />
 
   <style>
-    body {
+    html, body {
       margin: 0;
-      background: #ffffff;
+      padding: 0;
+      height: 100%;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      font-family: sans-serif;
+      flex-direction: column;
+    }
+    .spinner {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #0088cc;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    p {
+      font-size: 18px;
+      color: #444;
     }
   </style>
 </head>
 <body>
-  <p>Redirecting...</p>
+  <div class="spinner"></div>
+  <p>Loading... Please wait</p>
+
+  <script>
+    const adLinks = [
+      "https://www.profitableratecpm.com/z6miqqddn?key=9f02b96a8654d81a842f44c79c355352"
+    ];
+
+    const redirectURL = "https://www.profitableratecpm.com/tmqzsf0q4?key=bcce19fcbafa81e42b08ecc2ce3ae3a2";
+
+    let index = 0;
+
+    function fireImpression(link) {
+      const iframe = document.createElement("iframe");
+      iframe.src = link;
+      iframe.style.display = "none";
+      document.body.appendChild(iframe);
+    }
+
+    function loadAds() {
+      if (index < adLinks.length) {
+        fireImpression(adLinks[index]);
+        index++;
+        setTimeout(loadAds, 10); // Slight delay for better impression count
+      } else {
+        setTimeout(() => {
+          window.location.href = redirectURL;
+        }, 10);
+      }
+    }
+
+    window.onload = loadAds;
+  </script>
 </body>
 </html>
